@@ -1,0 +1,8 @@
+// Install Necesse-server
+
+@ShutdownOnFailedCommand 1
+@NoPromptForPassword 1
+force_install_dir /dst
+login anonymous
+app_update 1169370 validate
+quit
