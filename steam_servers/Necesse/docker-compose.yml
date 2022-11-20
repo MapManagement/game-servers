@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  necesse:
+    container_name: Necesse-Server
+    image: necesse-server
+    environment:
+      WORLD_NAME: WorldName
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./necesse_data:/home/root/.config/Necesse
+    restart: unless-stopped
+    ports:
+      - 14159-14159:14159-14159/udp
+~

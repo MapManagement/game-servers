@@ -10,8 +10,20 @@ Login: Anonymous
 
 ## Start
 
+Container solely:
+
 ```
-docker container run --name NecesseServer -p 14159-14159:14159-14159/udp necesse-server
+docker container run --name NecesseServer \
+-p 14159-14159:14159-14159/udp \
+-v ./necesse_data:/home/root/.config/Necesse \
+-e WORLD_NAME="WorldName" \
+necesse_server
+```
+
+Docker Compose:
+
+```sh
+docker-compose up -d
 ```
 
 ## Source

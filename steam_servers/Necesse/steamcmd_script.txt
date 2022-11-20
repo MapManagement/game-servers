@@ -2,7 +2,7 @@
 
 @ShutdownOnFailedCommand 1
 @NoPromptForPassword 1
-force_install_dir /dst
+force_install_dir /necesse
 login anonymous
 app_update 1169370 validate
 quit
