@@ -10,8 +10,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./necesse_data:/home/root/.config/Necesse
+      - ./necesse_data:/necesse
     restart: unless-stopped
     ports:
       - 14159-14159:14159-14159/udp
-~

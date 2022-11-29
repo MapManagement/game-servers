@@ -15,7 +15,7 @@ Container solely:
 ```
 docker container run --name NecesseServer \
 -p 14159-14159:14159-14159/udp \
--v ./necesse_data:/home/root/.config/Necesse \
+-v ./necesse_data:/necesse \
 -e WORLD_NAME="WorldName" \
 necesse_server
 ```
